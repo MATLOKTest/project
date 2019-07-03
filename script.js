@@ -1,3 +1,5 @@
+'use strict';
+
 let money, time;
 
 money = +prompt("Ваш бюджет на месяц?", "");
@@ -11,6 +13,7 @@ var appData = {
     income: [],
     savings: false
 };
+
 
 
 appData.expenses[prompt("Введите обязательную статью расходов в этом месяце", "")] 

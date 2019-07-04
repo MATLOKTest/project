@@ -1,4 +1,3 @@
-'use strict';
 
 let money, time;
 
@@ -73,3 +72,5 @@ function checkSavings(){
         alert("Доход с Вашего депозита в месяц: " + appData.monthIncome);
     }
 }
+
+checkSavings();

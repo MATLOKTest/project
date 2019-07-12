@@ -1,4 +1,5 @@
 
+
 let money, time;
 
 function start(){

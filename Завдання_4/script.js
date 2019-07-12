@@ -69,10 +69,38 @@ var appData = {
             appData.optionalExpenses[i] = questionOptExpenses;
         }
         console.log(appData.optionalExpenses);
+    },
+    chooseIncome: function(){
+        
+        let item = prompt("Что принесет дополнительный доход? (Перечислите через запятую)", "");
+
+        if(typeof(item) != "string" && typeof(item) == null && item == ''){
+            console.log("Вы ввели некорректные данные или не ввели их вовсе");
+        }else{
+            appData.income = item.split(", ");
+            appData.income.push(prompt("Может что-то еще? "));
+            appData.income.sort();
+        }
+        
+        appData.income.forEach(function(mass, i){
+            alert("Способы доп. заработка " + (i+1) + " - " + mass);
+        });
+
     }
 };
 
-
-for(let key in appData){
-    console.log("Наша программа включает в себя данные: " + key + " - " + appData[key]);
+for(key in appData){
+    console.log("Наша программа включает в себя данные:" + key + " - " + appData[key]);
 }
+
+
+
+
+
+
+
+
+
+
+
+

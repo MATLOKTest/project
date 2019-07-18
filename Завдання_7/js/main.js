@@ -1,12 +1,12 @@
-let buttonStart = document.getElementById("start"),
-    budgetValue = document.getElementsByClassName("budget-value"),
-    daybudgetValue = document.getElementsByClassName("daybudget-value"),
-    levelValue = document.getElementsByClassName("level-value"),
-    expensesValue = document.getElementsByClassName("expenses-value"),
-    optionalexpensesValue = document.getElementsByClassName("optionalexpenses-value"),
-    incomeValue = document.getElementsByClassName("income-value"),
-    monthsavingsValue = document.getElementsByClassName("monthsavings-value"),
-    yearsavingsValue = document.getElementsByClassName("yearsavings-value"),
+let buttonStart = document.getElementById("start")[0],
+    budgetValue = document.getElementsByClassName("budget-value")[0],
+    daybudgetValue = document.getElementsByClassName("daybudget-value")[0],
+    levelValue = document.getElementsByClassName("level-value")[0],
+    expensesValue = document.getElementsByClassName("expenses-value")[0],
+    optionalexpensesValue = document.getElementsByClassName("optionalexpenses-value")[0],
+    incomeValue = document.getElementsByClassName("income-value")[0],
+    monthsavingsValue = document.getElementsByClassName("monthsavings-value")[0],
+    yearsavingsValue = document.getElementsByClassName("yearsavings-value")[0],
 
     expensesItem = document.getElementsByClassName("expenses-item");
     expensesBtn  = document.getElementsByTagName("button")[0],
@@ -20,6 +20,10 @@ let buttonStart = document.getElementById("start"),
     yearValue = document.querySelector(".year-value"),
     monthValue = document.querySelector(".month-value"),
     dayValue = document.querySelector(".day-value");
+
+    console.log(expensesBtn);
+    console.log(optionalExpensesBtn);
+    console.log(countBtn);
 
 let money, time;
 
@@ -112,8 +116,6 @@ var appData = {
     }
 };
 
-for(key in appData){
-    console.log("Наша программа включает в себя данные:" + key + " - " + appData[key]);
-}
-
-console.log( typeof(+"Infinity") );
+// for(key in appData){
+//     console.log("Наша программа включает в себя данные:" + key + " - " + appData[key]);
+// }
